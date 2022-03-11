@@ -9,3 +9,6 @@ kafka-topics.bat --describe --topic registrations --bootstrap-server localhost:9
 
 // send message to broker
 kafka-console-producer.bat --topic registrations  --bootstrap-server localhost:9092
+
+// consume massage from broker
+kafka-console-consumer.bat --topic registrations  --bootstrap-server localhost:9092
