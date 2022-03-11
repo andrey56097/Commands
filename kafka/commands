@@ -26,3 +26,5 @@ kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --desc
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --reset-offsets --to-earliest --topic registrations --execute
 
 # Retention
+
+
