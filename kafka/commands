@@ -25,4 +25,4 @@ kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --desc
 // throw off topic to first message
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --reset-offsets --to-earliest --topic registrations --execute
 
---Retention
+# Retention
