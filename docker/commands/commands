@@ -1,0 +1,39 @@
+cd /home/ubuntu/moodle-data
+
+sudo docker-compose -f docker-compose.yml up
+
+// list of images
+sudo docker images -a
+
+// delete image
+sudo docker image rm ID_or_Name
+// forced 
+sudo docker image rmi -f ID_or_Name
+
+// inspect
+sudo docker inspect 3a5e53f63281
+
+// list of containers
+sudo docker ps
+
+// stop container
+sudo docker container stop ID_or_Name
+
+// remove container
+sudo docker rm ID_or_Name
+
+// check port in use 
+sudo netstat -pna | grep 3000
+sudo netstat -nlp | grep 8888
+
+
+sudo curl -sSL https://github.com/andrey56097/Moodle/blob/main/docker-compose.yml > docker-compose.yml
+
+// up container 
+sudo docker-compose up -d
+
+// moodle location 
+cd  /var/lib/docker/volumes/experior-moodle_moodledata_data/
+
+// remove all images by mask 
+docker rmi $(docker images 'mysql' -a -q)
