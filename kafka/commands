@@ -22,9 +22,13 @@ kafka-console-consumer.bat --topic registrations  --bootstrap-server localhost:9
 // check group and topis 
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --describe
 
-// throw off topic to first message
+// reset topic to first message
 kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --reset-offsets --to-earliest --topic registrations --execute
 
 # Retention
 
+// change retention ms
+kafka-configs.bat --bootstrap-server localhost:9092 --entity-type topics --entity-name registrations --alter --add-config retention.ms=60000
 
+// 
+kafka-console-consumer.bat  --bootstrap-server localhost:9092 --topic registrations --from-beginning
