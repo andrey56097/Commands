@@ -1,0 +1,4 @@
+Test-NetConnection 185.13.251.102 -port 8181
+
+netstat -ano | findstr :<PORT>
+taskkill /PID <PID_ID> /F

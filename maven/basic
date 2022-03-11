@@ -1,0 +1,12 @@
+mvn clean package -DskipTests 
+
+mvn clean package
+
+mvn clean install -DskipTests -pl service_name -am  
+
+mvn spring-boot:run
+
+mvn clean verify sonar:sonar \
+  -Dsonar.projectKey=Test \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=3dc66556f0bd8cfcf1f42562b2f52a6fe4c75228
