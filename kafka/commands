@@ -1,8 +1,11 @@
 // create topic
 kafka-topics.bat --create --topic registrations --bootstrap-server localhost:9092
 
-//list of topics
+// list of topics
 kafka-topics.bat --list --bootstrap-server localhost:9092
 
 // info about topic
 kafka-topics.bat --describe --topic registrations --bootstrap-server localhost:9092
+
+// send message to broker
+kafka-console-producer.bat --topic registrations  --bootstrap-server localhost:9092
