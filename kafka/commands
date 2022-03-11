@@ -1,3 +1,5 @@
+--Basic
+
 // create topic
 kafka-topics.bat --create --topic registrations --bootstrap-server localhost:9092
 
@@ -12,3 +14,15 @@ kafka-console-producer.bat --topic registrations  --bootstrap-server localhost:9
 
 // consume massage from broker
 kafka-console-consumer.bat --topic registrations  --bootstrap-server localhost:9092
+// consume massage from broker (read earliest)
+kafka-console-consumer.bat --topic registrations  --bootstrap-server localhost:9092 --consumer-property auto.offset.reset=earliest
+// consume massage from broker (with specific group)
+kafka-console-consumer.bat --topic registrations  --bootstrap-server localhost:9092 --consumer-property auto.offset.reset=earliest --group slurm
+
+// check group and topis 
+kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --describe
+
+// throw off topic to first message
+kafka-consumer-groups.bat --bootstrap-server localhost:9092 --group slurm --reset-offsets --to-earliest --topic registrations --execute
+
+--Retention
