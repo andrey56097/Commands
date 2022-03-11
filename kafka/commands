@@ -3,3 +3,6 @@ kafka-topics.bat --create --topic registrations --bootstrap-server localhost:909
 
 //list of topics
 kafka-topics.bat --list --bootstrap-server localhost:9092
+
+// info about topic
+kafka-topics.bat --describe --topic registrations --bootstrap-server localhost:9092
