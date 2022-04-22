@@ -1,0 +1,10 @@
+// get last from master
+update main branch
+
+git checkout YOUR_BRANCH
+git rebase master
+
+// fix conflicts and than
+git rebase --continue 
+git push origin ROUR_BRANCH -f
+
