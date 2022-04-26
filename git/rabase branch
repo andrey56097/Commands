@@ -6,5 +6,5 @@ git rebase master
 
 // fix conflicts and than
 git rebase --continue 
-git push origin ROUR_BRANCH -f
+git push origin YOUR_BRANCH -f
 
