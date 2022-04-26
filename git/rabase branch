@@ -4,6 +4,8 @@ update main branch
 git checkout YOUR_BRANCH
 git rebase master
 
+git add -u // necessary
+
 // fix conflicts and than
 git rebase --continue 
 git push origin YOUR_BRANCH -f
