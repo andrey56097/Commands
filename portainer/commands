@@ -3,6 +3,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 
 sudo netstat -ltnp | grep ':9000'
 sudo kill -9 2094
+sudo kill -9 `sudo lsof -t -i:8000`
 
 docker rm --force CONTAINER_ID
 
