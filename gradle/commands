@@ -1,2 +1,2 @@
 ./gradlew clean build --refresh-dependencies -x test
-./gradlew clean build assemble
+./gradlew clean assemble
