@@ -4,3 +4,5 @@ sudo dpkg -i DEB_NAME
 // printers
 systemctl stop cups-browsed
 systemctl disable cups-browsed
+
+nano ~/.zshrc 
