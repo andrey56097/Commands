@@ -10,3 +10,7 @@ git add -u // necessary
 git rebase --continue 
 git push origin YOUR_BRANCH -f
 
+
+
+
+ git reset HEAD~1
