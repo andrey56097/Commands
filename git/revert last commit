@@ -1,0 +1,10 @@
+1) UNDO local file changes and KEEP your last commit
+git reset --hard
+
+
+2) UNDO local file changes and REMOVE your last commit
+git reset --hard HEAD^
+
+
+3) KEEP local file changes and REMOVE your last commit
+git reset --soft HEAD^
