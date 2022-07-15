@@ -2,3 +2,4 @@
 micro init // put token
 micro generate-project // put name and choose project type
 publish-project
+micro publish-project -e _devmanticores@skai.io -s python-lambda
