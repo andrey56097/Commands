@@ -1,4 +1,6 @@
 ./gradlew clean cleanIdea idea
----./gradlew clean build --refresh-dependencies -x test---
 ./gradlew clean assemble
 ./gradlew build -x test
+
+
+---./gradlew clean build --refresh-dependencies -x test---
