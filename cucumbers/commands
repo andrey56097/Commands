@@ -7,6 +7,10 @@ test dbbuilder please
 test AutomationTestsDbBuilder cucumber please
 test CampaignAttributes.feature cucumber please
 
+test CampaignAPIMemSQL CampaignAPI apitests please
+
+
+
 
 
 
