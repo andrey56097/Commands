@@ -31,3 +31,4 @@ ____________________________________________________
 ```git push --force origin YOUR_BRANCH```
 
 _____________________________________________________
+https://docs.gitlab.com/ee/topics/git/git_rebase.html
