@@ -10,7 +10,25 @@ git add -u // necessary
 git rebase --continue 
 git push origin YOUR_BRANCH -f
 
+git reset HEAD~1
 
 
+____________________________________________________
 
- git reset HEAD~1
+1. Получить последние изменения из main:
+
+```git fetch origin master```
+
+2. Проверьте свою ветку функций:
+
+```git checkout YOUR_BRANCH```
+
+3. Перебазируйте его против main:
+
+```git rebase origin/master```
+
+4. Force-push в вашу ветку.
+
+``` git push --force origin YOUR_BRANCH```
+
+_____________________________________________________
