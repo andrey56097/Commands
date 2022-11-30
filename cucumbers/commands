@@ -10,3 +10,7 @@ test CampaignAttributes.feature cucumber please
 test CampaignAPIMemSQL CampaignAPI apitests please
 
 test *dataproviders cucumber please
+
+test *MemSqlAll cucumber please
+
+
