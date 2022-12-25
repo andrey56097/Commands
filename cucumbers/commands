@@ -14,6 +14,9 @@ test *dataproviders cucumber please
 test *MemSqlAll cucumber please
 
 
+test *MMP cucumber please
+
+
 
 /opt/idea/bin/idea.sh
 
