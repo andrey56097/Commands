@@ -6,3 +6,5 @@ systemctl stop cups-browsed
 systemctl disable cups-browsed
 
 nano ~/.zshrc 
+
+ls -ld /tmp
