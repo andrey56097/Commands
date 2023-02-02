@@ -1,3 +1,6 @@
 gradle createNewDb genconf genTestDBProps update -PdbPass=root56 -PdbUser=root -PdbName=kazaam -PdbHost=127.0.0.1 -Pforce=true
 gradle setKsGlobals -PdbPass=root56 -PdbUser=root -PdbName=kazaam -PdbHost=127.0.0.1 -Pforce=true -PinsertNewGlobals=true -PksGlobals=IS_MEMSQL_ENABLED=1:STOP_CURRENCY_FETCHER_PROCESS=1
 gradle createNewDb genMemSqlDBProps updateMemsql -PdbPass=root56 -PdbUser=root -PdbName=ks -PdbHost=127.0.0.1 -PdbPort=33060 -Pforce=true -Pcontexts=memsql -PdbType=memsql
+
+./gradlew -PdbPass=root56 -PdbUser=root -PdbName=ks -PdbHost=localhost -PdbPort=33060 -Pforce=true -Pcontexts=memsql -PdbType=memsql createNewDb genMemSqlDBProps updateMemsql
+./gradlew createNewDb genconf genTestDBProps update -PdbPass=root56 -PdbUser=root -PdbName=kazaam -PdbHost=127.0.0.1 -Pforce=true
