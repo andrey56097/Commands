@@ -1,6 +1,5 @@
 
 test FacebookEntityConsumer cucumber please
-
 test Apple cucumber please
 
 test dbbuilder please
@@ -10,15 +9,9 @@ test CampaignAttributes.feature cucumber please
 test CampaignAPIMemSQL CampaignAPI apitests please
 
 test *dataproviders cucumber please
-
 test *MemSqlAll cucumber please
-
-
 test *MMP cucumber please
 
 
 
-/opt/idea/bin/idea.sh
-
-
-
+test CohortApi apitests please
