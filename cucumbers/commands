@@ -7,6 +7,7 @@ test AutomationTestsDbBuilder cucumber please
 test CampaignAttributes.feature cucumber please
 
 test CampaignAPIMemSQL CampaignAPI apitests please
+test AnalysisApiRead apitests please
 
 test *dataproviders cucumber please
 test *MemSqlAll cucumber please
