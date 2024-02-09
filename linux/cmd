@@ -13,3 +13,6 @@ gzip -n "walmart_search_term_by_keyword_performance.json"
 
 // This looks like Chrome bug #367048 - Cannot start chrome after changing hostname, try:
 rm -rf ~/.config/google-chrome/Singleton*
+
+// delete sound from print screen app
+sudo mv /usr/share/sounds/freedesktop/stereo/camera-shutter.oga /usr/share/sounds/freedesktop/stereo/camera-shutter-disabled.oga
