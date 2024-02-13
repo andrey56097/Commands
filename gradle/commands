@@ -4,3 +4,6 @@
 
 
 ---./gradlew clean build --refresh-dependencies -x test---
+
+// update lock files
+ gradle build --write-locks
