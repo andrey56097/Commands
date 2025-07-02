@@ -1,0 +1,5 @@
+git checkout your_branch
+git reset $(git merge-base master HEAD)
+git add .
+git commit -m "Result commit name"
+git push --force
