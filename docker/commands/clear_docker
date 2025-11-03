@@ -1,0 +1,3 @@
+docker stop $(docker ps -aq) 2>/dev/null 
+docker rm -f $(docker ps -aq) 2>/dev/null 
+docker network rm $(docker network ls -q | grep -vE "bridge|host|none") 2>/dev/null
